@@ -20,8 +20,14 @@ namespace Test
     [InitializeOnLoad]
     public class EditorTest
     {
-        [MenuItem("Do Test/Do Test")]
-        public static void Test()
+        [MenuItem("Do Test/Print")]
+        public static void Print()
+        {
+            Debug.Log(TestSettings.instance.Boolean);
+        }
+
+        [MenuItem("Do Test/Set to false")]
+        public static void SetToFalse()
         {
             Debug.Log(TestSettings.instance.Boolean);
             TestSettings.instance.Boolean = false;
