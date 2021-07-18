@@ -1,7 +1,3 @@
-# Since the folder for the Unity project is nested, 
-# this .vscode metadata does not apply anyway.
-.vscode
-
 # Unity autogenerates these
 *.csproj
 *.sln
